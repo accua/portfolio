@@ -61,3 +61,19 @@ nav {
   z-index: 2;
   position: relative;
 }
+
+a, a:hover {
+  color: white;
+}
+
+div.container-fluid {
+  background-color: black;
+}
+
+.navbar-default .navbar-brand {
+  color: white;
+}
+
+.navbar-default .navbar-nav li a {
+  color: white;
+}
