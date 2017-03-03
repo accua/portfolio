@@ -5,7 +5,10 @@ class GithubProjects
   end
 
   def get_projects
-    JSON.parse(RestClient.get("https://#{ENV['GH_KEY']}@api.github.com/users/" + @username + "/repos"))
+    begin
+      JSON.parse(RestClient.get("https://#{ENV['GH_KEY']}@api.github.com/users/" + @username + "/repos?sort='updated'"))
+    rescue Exception => error
+      JSON.parse(error.response)['message']
+    end
   end
-
 end
