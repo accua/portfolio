@@ -51,8 +51,8 @@ group :development, :test do
   gem 'factory_girl_rails'
   gem 'simplecov', require: false
   gem 'vcr'
-  gem 'dotenv-rails'
   gem 'webmock'
+  gem 'dotenv-rails'
 end
 
 group :development do

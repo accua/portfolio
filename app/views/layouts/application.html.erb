@@ -26,8 +26,8 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
             <% if current_user.try(:admin) %>
+            <li><%= link_to 'Admin', rails_admin_path %></li>
               <li><%= link_to 'Logout', destroy_user_session_path, method: :delete %></li>
-              <li><%= link_to 'Admin', rails_admin_path %></li>
             <% elsif current_user %>
               <li><%= link_to 'Logout', destroy_user_session_path, method: :delete %></li>
             <% else %>
@@ -37,8 +37,21 @@
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
     </nav>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
-    <%= yield %>
+    <% if flash[:notice]%>
+      <%= flash[:notice] %>
+    <% end %>
+    <% if flash[:alert]%>
+      <%= flash[:alert] %>
+    <% end %>
+    <% if flash[:error]%>
+      <%= flash[:error] %>
+    <% end %>
+    <% if current_page?('/') %>
+      <%= yield %>
+    <% else %>
+      <div class="container">
+        <%= yield %>
+      </div>
+    <% end %>
   </body>
 </html>
