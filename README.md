@@ -11,6 +11,7 @@ _**Andrew Accuardi**_
 * `rails db:migrate`
 * `bundle`
 * `rails s` to serve
+* to setup an admin, make an account and change the admin boolean via an update method in the rails console.
 
 ## Running / Development
 
