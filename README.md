@@ -1,24 +1,28 @@
-# README
+# BuildMyBackpack
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+_This application was created to showcase myself for Epicodus' week 4 code review_
 
-Things you may want to cover:
+_**Andrew Accuardi**_
 
-* Ruby version
+## Installation
 
-* System dependencies
+* `git clone https://github.com/accua/portfolio`
+* `rails db:create`
+* `rails db:migrate`
+* `bundle`
+* `rails s` to serve
 
-* Configuration
+## Running / Development
 
-* Database creation
+* navigate to `localhost:3000` in your web browser to see the project!
 
-* Database initialization
 
-* How to run the test suite
+## Technologies Used
 
-* Services (job queues, cache servers, search engines, etc.)
+_This webpage was made using HTML5, Ruby on Rails, Bootstrap, CSS3_
 
-* Deployment instructions
+### License
 
-* ...
+Copyright (c) 2017 _Andrew Accuardi_
+
+*Licensed under the GPL License*
