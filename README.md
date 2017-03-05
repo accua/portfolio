@@ -1,4 +1,4 @@
-# BuildMyBackpack
+# Portfolio
 
 _This application was created to showcase myself for Epicodus' week 4 code review_
 
